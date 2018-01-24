@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+char font[] = "Hack:pixelsize=12:antialias=true:autohint=true";
 int borderpx = 2;
 
 /*
@@ -16,7 +16,7 @@ int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char shell[] = "/bin/sh";
+static char shell[] = "/bin/bash";
 static char *utmp = NULL;
 static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -85,24 +85,24 @@ static unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#073642",
+	"#dc322f",
+	"#859900",
+	"#b58900",
+	"#268bd2",
+	"#d33682",
+	"#2aa198",
+	"#eee8d5",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#002b36",
+	"#cb4b16",
+	"#586e75",
+	"#657b83",
+	"#839496",
+	"#6c71c4",
+	"#93a1a1",
+	"#fdf6e3",
 
 	[255] = 0,
 
@@ -116,9 +116,9 @@ const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-unsigned int defaultcs = 256;
+unsigned int defaultfg = 11;
+unsigned int defaultbg = 8;
+unsigned int defaultcs = 3;
 unsigned int defaultrcs = 257;
 
 /*
